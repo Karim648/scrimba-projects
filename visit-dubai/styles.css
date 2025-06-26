@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    color: #f5f5f5;
+}
+
+header {
+    background-color: #00276a;
+    margin-top: 0;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 3px 3px 3px black;
+    padding: 100px 20px;
+    
+}
+
+#title {
+    margin: 0;
+}
+
+main {
+    text-align: center;
+    background-color: #FFB894;
+    padding: 50px;
+}
+
+main h2 {
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+.activity-section {
+    display: flex;
+}
+
+.activity {
+    margin: 0 35px;
+}
+
+.activity-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.title {
+    font-weight: 700;
+}
+
+.guide-section {
+    background-color: #EDCCC0;
+    margin: 0;
+    padding: 100px;
+}
+
+.card {
+    width: 300px;
+    background-color: #433237;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#quote {
+    padding-left: 20px;
+    height: 250px;
+}
+
+#rulers {
+    width: 180px;
+    height: 250px;
+    border-radius: 10px;
+}

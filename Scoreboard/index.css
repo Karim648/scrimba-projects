@@ -1,0 +1,63 @@
+body {
+    background-color: #FFE6A7;
+    font-family: "Tourney", sans-serif;
+}
+
+button {
+    font-family: "Tourney", sans-serif;
+}
+
+.title {
+    color: #432818;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#new-game {
+    height: 100px;
+    margin-top: 300px;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 12px 20px;
+    border-radius: 7px;
+    color: #432818;
+    background: none;
+}
+
+.new-game:hover {
+    background-color: #6F1D1B;
+    color: whitesmoke;
+}
+
+.score-card {
+    background-color: #99582A;
+    border-radius: 10px;
+}
+
+.score {
+    color: #6F1D1B;
+    font: 700;
+    font-size: 125px;
+    padding: 125px 150px;
+    margin: 0 0 50px 0;
+}
+
+.score-btn {
+    height: 100px;
+    width: 125px;
+    border-radius: 10px;
+    border: 4px solid #6F1D1B;
+    color: #6F1D1B;
+    background: none;
+    font-size: 34px;
+}
+
+.score-btn:hover {
+    background-color: #99582A;
+}
