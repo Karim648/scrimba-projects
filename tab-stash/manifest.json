@@ -4,7 +4,7 @@
     "name": "TabStash",
     "action": {
         "default_popup": "index.html",
-        "default_icon": "tab-stash-icon.png"
+        "default_icon": "TabStashIcon.png"
     },
     "permissions": [
         "tabs"
