@@ -28,3 +28,38 @@ const posts = [
     }
 ]
 
+
+const postPfp = document.getElementById("post-pfp");
+const postName = document.getElementById("post-name");
+const postLocation = document.getElementById("post-location");
+const postImg = document.getElementById("post-img");
+const username = document.getElementById("username");
+const commentSection = document.getElementById("comment-section");
+
+const likeBtn = document.getElementById("like-btn");
+const likeEl = document.getElementById("like-el");
+
+
+function renderPost(arr, x) {
+    postPfp.src = arr[x].avatar;
+    postName.textContent = arr[x].name;
+    postLocation.textContent = arr[x].location;
+    postImg.src = arr[x].post;
+    likeEl.innerHTML = arr[x].likes;
+    commentSection.innerHTML = `
+    <span class="comment">${arr[x].username}</span>
+    ${arr[x].comment}`;
+    
+}
+
+renderPost(posts, 1);
+
+likeBtn.addEventListener("click", function() {
+    const cleanedLike = likeEl.textContent.replace(",", "");
+    let likeCount = parseInt(cleanedLike);
+    likeEl.textContent = likeCount.toLocaleString();
+    likeCount++;
+    alert(likeEl.textContent);
+});
+
+

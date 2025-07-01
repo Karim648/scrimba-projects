@@ -12,15 +12,11 @@ h2 {
     font-weight: 400;
 }
 
-.header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    
-}
-
-header {
     padding: 20px 0;
     border-bottom: 1px solid #C6C6C6;
 }
@@ -69,13 +65,15 @@ header {
     background-size: cover;
 }
 
-.interact {
-    padding-bottom: 10px;
-}
-
 .btn {
     height: 50px;
     padding: 0 20px 0 0;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    opacity: 0.6;
 }
 
 

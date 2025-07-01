@@ -9,41 +9,41 @@
 <body>
     <!-- header -->
     <header>
-        <div class="header">
-            <img class="logo" src="images/logo.png" alt="instagram logo.">
-            <img class="pfp" src="images/pfp.png" alt="user avater.">
-        </div>
+        <img class="logo" src="images/logo.png" alt="instagram logo.">
+        <img class="pfp" src="images/pfp.png" alt="user avater.">
     </header>
 
-    <!-- post -->
+    <!-- post-section -->
     <section class="post-section">
 
+        <!-- description -->
         <div class="container">
-            <img class="pfp" src="images/avatar-vangogh.jpg" alt="avatar of vangogh.">
+            <img class="pfp" id="post-pfp" src="images/avatar-vangogh.jpg" alt="avatar of vangogh.">
             <div class="about">
-                <h1>Vincent van Gogh</h1>
-                <h2>Zudert, Netherlands</h2>
+                <h1 id="post-name">Vincent van Gogh</h1>
+                <h2 id="post-location">Zudert, Netherlands</h2>
             </div>
         </div>
 
+        <!-- post -->
         <div class="container">
-            <img class="post" src="images/post-vangogh.jpg" alt="post.">
+            <img class="post" id="post-img" src="images/post-vangogh.jpg" alt="post.">
         </div>
 
+        <!-- interactivity -->
         <div class="container-feed">
-            <div class="interact">
-                <img class="btn" src="images/icon-heart.png" alt="likes icon.">
+            <div>
+                <img class="btn" id="like-btn" src="images/icon-heart.png" alt="likes icon.">
                 <img class="btn" src="images/icon-comment.png" alt="comments icon.">
-                <img class="btn" src="images/icon-dm.png" alt="dm icon">
+                <img class="btn" src="images/icon-dm.png" alt="dm icon.">
             </div>
 
-            <h2 class="comment">21,492 Likes</h2>
-            <h2><span class="comment">vincey1853</span> just took a few mushrooms lol</h2>
-
+            <h2 class="comment"><span id="like-el"></span> Likes</h2>
+            <h2 id="comment-section"><span class="comment" id="username">vincey1853</span> just took a few mushrooms lol</h2>
         </div>
 
     </section>
     
-    <script src="index.jss"></script>
+    <script src="index.js"></script>
 </body>
 </html>
