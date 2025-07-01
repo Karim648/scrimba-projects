@@ -1,0 +1,82 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    margin: 5px 0;
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    
+}
+
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid #C6C6C6;
+}
+
+.pfp {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.logo {
+    width: 200px;
+}
+
+.post-section {
+    background-color: #EDEDED;
+    padding: 0 0 50px 0;
+}
+
+.container, 
+.container-feed {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.container-feed {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    padding: 10px 20px;
+}
+
+.likes,
+.comment {
+    color: #000000;
+    font-weight: 700;
+}
+
+.post {
+    margin: 0 auto;
+    width: 100%;
+    background-size: cover;
+}
+
+.interact {
+    padding-bottom: 10px;
+}
+
+.btn {
+    height: 50px;
+    padding: 0 20px 0 0;
+}
+
+
+
