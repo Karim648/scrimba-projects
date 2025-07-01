@@ -46,10 +46,17 @@ ul {
 
 li {
     margin-top: 5px;
+    line-height: 18px;
 }
 
 a {
     color: #007BFF;
+}
+
+img {
+    display: inline-block;
+    float: right;
+    height: 23px;
 }
 
 

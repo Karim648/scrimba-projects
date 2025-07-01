@@ -27,6 +27,7 @@ function render(leads) {
                 <a target='_blank' href='${leads[i]}'>
                     ${leads[i]}
                 </a>
+                <img src="deleteLink.png" alt="delete icon for link">
             </li>
         `
     }
