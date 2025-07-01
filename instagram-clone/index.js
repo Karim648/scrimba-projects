@@ -52,14 +52,12 @@ function renderPost(arr, x) {
     
 }
 
-renderPost(posts, 1);
-
 likeBtn.addEventListener("click", function() {
     const cleanedLike = likeEl.textContent.replace(",", "");
     let likeCount = parseInt(cleanedLike);
-    likeEl.textContent = likeCount.toLocaleString();
     likeCount++;
-    alert(likeEl.textContent);
+    likeEl.textContent = likeCount.toLocaleString();
+    
 });
 
-
+renderPost(posts, 0);
