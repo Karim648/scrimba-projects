@@ -6,11 +6,17 @@ body {
     font-size: 20px;
 }
 
+/* .container {
+    display: flex;
+    flex-direction: column;
+} */
+
 input {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
     border: 1px solid #007BFF;
+    border-radius: 10px; 
     margin-bottom: 4px;
 }
 
@@ -20,6 +26,7 @@ button {
     padding: 10px 20px;
     border: 1px solid lightgray;
     font-weight: bold;
+    border-radius: 10px; 
 }
 
 button:hover,
