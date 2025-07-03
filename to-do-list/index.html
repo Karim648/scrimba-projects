@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Get It Done:</h1>
+        <button class="add-btn">Add Task</button>
+    </header>
+
+    <main>
+        <section class="task-section">
+            <div class="display-task">
+                <h2>Tasks</h2>
+                <ul class="task-list" id="task-li">
+                    <!-- add tasks in js -->
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="modal" id="add-task">
+                <!-- js pop up modal to add task -->
+                 <button id="close-btn">x</button>
+                <form action="" class="create" id="create-task">
+                    <h2 class="task">Create Task</h2>
+                    <label for="task-name" class="task">Task name:</label>
+                    <input class="task" type="text" id="task-name" placeholder="Get groceries">
+
+                    <label class="task" for="task-desc">Task description:</label>
+                    <input class="task" type="text" id="task-desc" placeholder="go to walmart at 9:30am for fresh produce">
+
+                    <label class="task" for="task-date">Task date:</label>
+                    <input class="task" type="date" name="date" id="task-date">
+
+                    <button class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+   
+
+    <script src="index.js"></script>
+</body>
+</html>
