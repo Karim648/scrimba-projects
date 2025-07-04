@@ -7,7 +7,7 @@ body {
 header {
     display: flex;
     align-items: flex-start;
-    background-color: rgb(211, 131, 131);
+    background-color: rgb(208, 112, 112);
     padding: 10px;
 }
 
@@ -29,7 +29,8 @@ h1 {
 .add-btn:hover, 
 .add-btn:focus, 
 .add-btn:active {
-    background-color: aqua;
+    background-color: rgb(34, 146, 243);
+    /* background-color: rgb(41, 169, 223); */
 }
 
 .to-do {
@@ -47,7 +48,7 @@ main {
 .modal {
     display: none; 
     background-color: lightgray;
-    height: 600px;
+    height: 650px;
     width: 400px;
     position: fixed;
     top: 0;
