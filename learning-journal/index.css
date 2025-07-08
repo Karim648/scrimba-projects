@@ -1,0 +1,103 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    color: #0E0E0E;
+    font-weight: 700;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 1.125rem;
+}
+
+.logo-img {
+    height: 4rem;
+}
+
+.nav-links {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-bar a {
+    color: #0E0E0E;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.hero-section {
+    background-image: url("images/hero-icon.png");
+    background-size: cover;
+    background-position: bottom;
+    height: 50vh;
+    color: white;
+    display: flex;
+}
+
+.hero-container {
+    margin-top: auto;
+    padding: 1rem 2rem;
+    max-width: 60ch;
+}
+
+.date {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.hero-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.hero-subheading {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.blog-container { 
+    display: grid;
+    grid-template-columns: 1fr;  /* 3 coloumns */
+    grid-auto-rows: 200px;  /* should make rows that are auto made have a max height of 200px */
+    margin: 0 auto;  /* center container*/
+    
+}
+
+.blog-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.blog-1 {
+    grid-area: "blog-1";
+    height: 200px;
+    width: 200px;
+}
+
+.blog-2 {
+    grid-area: "blog-2";
+    height: 100px;
+    width: 200px;
+}
+
+.blog-3 {
+    grid-area: "blog-3";
+    height: 100px;
+    width: 200px;
+}
