@@ -18,8 +18,8 @@ h1 {
 h4 {
     display: inline;
     font-size: 28px;
-    /* text-align: center; */
 }
+
 
 .menu-items {
     margin: 40px;
@@ -36,12 +36,20 @@ h4 {
     padding: 15px 40px 15px 0px;
 }
 
-.food-option {
     
+    
+}
+
+
 }
 
 .ingredients {
     color: #8B8B8B;
+}
+
+.selected-items {
+    margin: 15px auto 30px 0;
+    margin-right: auto;
 }
 
 .select-item {
@@ -92,13 +100,14 @@ h4 {
 
 .total-items {
     display: flex;
+    flex-direction: column;
     align-items: center;
     border-bottom: 2px solid #393333;
     margin-right: auto;
     padding-bottom: 20px;
 }
 
-.item-price {
+.total-item-price {
     margin-left: auto;
 }
 
@@ -115,7 +124,6 @@ h4 {
     font-weight: 700;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: none;
-    /* margin: auto; */
     padding: 12px 18px;
     border-radius: 10px;
     width: 100%;
@@ -124,7 +132,86 @@ h4 {
 
 .complete-order:hover,
 .complete-order:focus,
-.complete-order:active {
-    background-color: hsl(160, 82%, 37%);
+.complete-order:active,
+#pay-btn:hover, 
+#pay-btn:focus, 
+#pay-btn:active {
+    background-color: hsl(160, 82%, 45%);
+    outline: hsl(160, 82%, 10%);
     cursor: pointer;
 }
+
+/* payment modal */
+
+.payment {
+    background-color: whitesmoke;
+    width: 550px;
+    height: 550px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.payment-card {
+   padding: 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.payment-card h2 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.pay-input, #pay-btn {
+    display: block;
+    margin: 22px auto;
+    height: 75px;
+    width: 400px;
+    border: 1px solid #757575;
+    border-radius: 7px;
+    font-size: 20px;
+    color: #757575;
+    padding: 0 20px;
+}
+
+#pay-btn {
+    color: white;
+    background-color: #16DB99;
+    border: none;
+    box-shadow: 0 0 1px grey;
+    font-weight: bold;
+}
+
+.pay-input:hover,
+.pay-input:focus,
+.pay-input:active {
+    border: 1px solid #16DB99;
+    outline: #16DB99;
+}
+
+.blur {
+    filter:blur(3px);
+}
+
+
+.order-message {
+    background-color: #ECFDF5;
+    color: #065F46;
+    text-align: center;
+    font-size: 32px;
+    padding: 50px 60px;
+    margin: 10px 40px 60px 40px;
+    box-shadow: 0 0 3px #065F46;
+}
+
+
+
+

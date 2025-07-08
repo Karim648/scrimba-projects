@@ -6,35 +6,65 @@
     <title>Jimmy's Diner</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body class="">
     <header>
         <h1>Jimmy's Diner</h1>
         <h2>The best burgers and pizzas in town</h2>
     </header>
     
+    <!-- menu section -->
     <section class="menu-section" id="menu">
         <!-- <div class="menu-items" id="menu-item">
         </div> -->
     </section>
 
+
+    <!-- total section -->
     <section id="total" class="display">
         <div class="total-section">
             <h4>Your order</h4>
             <div class="total-items">        
-                <div class="selected-items">
-                    <h4>Pizza</h4>
-                    <button class="remove">remove</button>
-                </div>
-                <h4 class="item-price">$14</h4>
+                
             </div>
             <div class="total-price">
-                <h2>Total price:</h2>
-                <h4 class="item-price">$19</h4>
+            
             </div>
             <button class="complete-order">Complete Order</button> 
         </div>
     </section>
     
+    <!-- payment modal -->
+     <section class="payment display">
+        <div class="payment-card">
+            <h2>Enter card details</h2>
+            <form action="#" class="payment-form">
+                <input 
+                type="text" 
+                class="pay-input"
+                id="name"
+                placeholder="Enter your name"
+                required>
+                <input 
+                type="text" 
+                class="pay-input"
+                placeholder="Enter card number"
+                pattern="[0-9]{4}[-][0-9]{4}[-][0-9]{4}[-][0-9]{4}"
+                required>
+                <input 
+                type="text" 
+                class="pay-input"
+                placeholder="cvv"
+                pattern="[0-9]{3}"
+                required>
+                <button id="pay-btn">Pay</button>
+            </form>
+        </div>
+     </section>
+
+     <!-- Order Message -->
+      <section class="order-message display">
+
+      </section>
 
     <script src="index.js" type="module"></script>
 </body>
