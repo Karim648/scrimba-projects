@@ -8,8 +8,8 @@
 </head>
 <body>
     <header>
-        <input type="color">
-        <select name="colors" id="colors">
+        <input type="color" id="seed-color" >
+        <select name="color-scheme" id="color-scheme">
             <option value="Monochrome">Monochrome</option>
             <option value="Monochrome-dark">Monochrome-dark</option>
             <option value="Monochrome-light">Monochrome-light</option>
@@ -18,21 +18,21 @@
             <option value="Analogic-Complement">Analogic-Complement</option>
             <option value="Triad">Triad</option>
         </select>
-        <button>Get color scheme</button>
+        <button id="get-color-scheme">Get color scheme</button>
     </header>
     <section class="colors-section">
-        <div class="color" id="color-1"></div>
-        <div class="color" id="color-2"></div>
-        <div class="color" id="color-3"></div>
-        <div class="color" id="color-4"></div>
-        <div class="color" id="color-5"></div>
+        <div class="color" data-color="1"></div>
+        <div class="color" data-color="2"></div>
+        <div class="color" data-color="3"></div>
+        <div class="color" data-color="4"></div>
+        <div class="color" data-color="5"></div>
     </section>
     <section class="hexcodes-section">
-        <div class="hexcode" id="hexcode-1">1wnwjkdnwk</div>
-        <div class="hexcode" id="hexcode-2">2wkmwledmwe</div>
-        <div class="hexcode" id="hexcode-3">3wlekdmnlwed</div>
-        <div class="hexcode" id="hexcode-4">4lwkdmw</div>
-        <div class="hexcode" id="hexcode-5">5wlkdmwmed</div>
+        <div class="hexcode" data-hex="1"></div>
+        <div class="hexcode" data-hex="2"></div>
+        <div class="hexcode" data-hex="3"></div>
+        <div class="hexcode" data-hex="4"></div>
+        <div class="hexcode" data-hex="5"></div>
     </section>
     <script src="index.js"></script>
 </body>
