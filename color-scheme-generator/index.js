@@ -3,13 +3,13 @@ const seedColor = document.querySelector("#seed-color");
 const colorScheme = document.querySelector("#color-scheme");
 const hexArr = document.querySelectorAll(".hexcode");
 const colorArr = document.querySelectorAll(".color");
+console.log(...hexArr);
 
 getColorScheme.addEventListener("click", () => {
     const cleanSeedColor = seedColor.value.replace("#", "");
     fetch(`https://www.thecolorapi.com/scheme?hex=${cleanSeedColor}&mode=${colorScheme.value.toLowerCase()}&count=5`)
     .then(response => response.json())
     .then(data => {
-        console.log(data);
         for (let i = 0; i < data.colors.length; i++) {
             hexArr[i].textContent = data.colors[i].hex.value;
             colorArr[i].style.backgroundColor = data.colors[i].hex.value;
@@ -25,8 +25,6 @@ getColorScheme.addEventListener("click", () => {
 
 // you can use queryselector all on the hexcode class 
 // to get an array of all the hexcode classes then iterate through the array
-// ex dataset.hex === 1
 
 // to change the background colour do .style.backgroundColor = hexcode
 
-// working link: `https://www.thecolorapi.com/id?hex=${cleanSeedColor}`
