@@ -37,7 +37,7 @@ async function getMovie(title) {
                     </div>
                 </div>
             `;
-            const watchlistBtn = document.querySelectorAll(".watchlist-btn");
+            const watchlistBtn = document.querySelectorAll(".watchlist-btn");   // could maybe refactor the button clicks into a outside function that you call
             watchlistBtn.forEach(watchlistBtnClick => {
                 watchlistBtnClick.addEventListener("click", () => {
                     const movieEl = watchlistBtnClick.closest(".movie");
@@ -49,7 +49,7 @@ async function getMovie(title) {
                     const movieObj = {title, poster, runtime, genre, plot};
                     
                     if (!(watchlist.length !== 0 && (watchlist.some(movie => movie.title === movieObj.title)))) {
-                        watchlist.push(movieObj);                  
+                        watchlist.push(movieObj);   // find a way to refactor this if statement               
                     } 
                     localStorage.setItem("movies", JSON.stringify(watchlist));
                 })
@@ -79,7 +79,7 @@ if (watchlistSection) {
                 </div>
             `;
     })
-    const removeBtn = document.querySelectorAll(".remove-btn");
+    const removeBtn = document.querySelectorAll(".remove-btn");     // could maybe refactor this into a outside function you call inside instead
     removeBtn.forEach(btn => {
         btn.addEventListener("click", () => {
             btn.closest(".movie").remove();  // visually removes html
