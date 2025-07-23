@@ -29,6 +29,8 @@ div.top {
 
 h1.time {
     text-align: center;
+    font-size: 4rem;
+    letter-spacing: 0.5px;
 }
 
 div#crypto {
