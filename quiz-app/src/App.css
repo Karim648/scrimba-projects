@@ -1,0 +1,95 @@
+form {
+  display: flex;
+}
+
+.start-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.quiz-section button {
+  font-size: 1.3rem;
+  margin: 1rem;
+}
+
+.question-section {
+  margin: 0.3rem;
+  border-bottom: 1.5px solid #DBDEF0;
+}
+
+.question {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #293264;
+  text-align: center;
+}
+
+fieldset {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  margin-bottom: 1rem;
+  color: #293264;
+}
+
+/* hide the actual radios */
+fieldset input[type="radio"] {
+  display: none;
+}
+
+/* style the labels as buttons */
+fieldset label {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  border: 1px solid #4D5B9E;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* hover effect */
+fieldset label:hover {
+  background-color: #D6DBF5;
+  color: #293264;
+  border: none;
+}
+
+/* style the "checked:" state the checked state checks for on value for radio buttons */
+/* :has() selects the label that has a checked input as a child*/
+label:has(input[type="radio"]:checked){
+  background-color: #D6DBF5;
+  color: #293264;
+  border: none;
+}
+
+
+/* Loading component */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+
+
+
