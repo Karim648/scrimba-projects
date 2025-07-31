@@ -123,3 +123,11 @@ label:has(input[type="radio"]:checked){
   background-color: #F8BCBC;
   border: none;
 }
+
+.game-count {
+  color: #293264;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1rem;
+}
