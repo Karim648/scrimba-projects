@@ -10,12 +10,22 @@ form {
   align-items: center;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form button {
+  align-self: center;
+  width: 250px;
+  padding: 1rem;
+}
+
 .quiz-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-top: 1rem;
+  margin: 1rem;
 }
 
 .quiz-section button {
@@ -80,6 +90,7 @@ label:has(input[type="radio"]:checked){
 
 /* Loading component */
 .loading-container {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,6 +101,25 @@ label:has(input[type="radio"]:checked){
   font-weight: bold;
 }
 
+.score-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.score {
+  color: #293264;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
 
+.correct {
+  background-color: #94D7A2;
+  font-weight: bold;
+  border: none;
+}
 
+.wrong {
+  background-color: #F8BCBC;
+  border: none;
+}

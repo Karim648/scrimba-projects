@@ -11,7 +11,7 @@ const [start, setStart] = useState(false);
           <Quiz /> :
         <section className="start-screen">
           <h1>Quizzical</h1>
-          <button onClick={() => setStart(true)}>Start Quiz!</button>
+          <button onClick={() =>setStart(true)}>Start Quiz!</button>
         </section> 
       }
     </>
